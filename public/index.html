@@ -8,41 +8,37 @@
     </head>
 
     <body>
-        
-            <div class='searchbar col w-full'>
-                <h1 class='title'>Search for homeflow properties</h1>
-                <div class='searchbar__options row w-full'>
-                    <div class='col'>
-                        <h2>Property Location</h2>
-                        <input type='text' placeholder='Search for a property location...' id='searchbar-location'>
-                    </div>
-                    <div class='col'>
-                        <h2>Property Price (Maximum)</h2>
-                        <div class='row w-full'>
-                            <input type='range' min='0' max='500000' value='0' id='searchbar-price' step='1000'>
-                            <h3 id='searchbar-price-number'>£0</h3>
-                        </div>
-                    </div>
-                    <div class='col'>
-                        <h2>Property Status</h2>
-                        <select id='searchbar-status'>
-                            <option selected value=''>Select a property status...</option>
-                            <option value='For sale'>For sale</option>
-                            <option value='To let'>To let</option>
-                            <option value='Let agreed'>Let agreed</option>
-                            <option value='Sold'>Sold</option>
-                        </select>
-                    </div>
-                    <button id='searchbar-search'>Search</button>
+        <div class='searchbar col w-full'>
+            <h1 class='title'>Search for homeflow properties</h1>
+            <div class='searchbar__options row w-full'>
+                <div class='col'>
+                    <h2>Property Location</h2>
+                    <input type='text' placeholder='Search for a property location...' id='searchbar-location'>
                 </div>
+                <div class='col'>
+                    <h2>Property Price (Maximum)</h2>
+                    <div class='row w-full'>
+                        <input type='range' min='0' max='500000' value='0' id='searchbar-price' step='1000'>
+                        <h3 id='searchbar-price-number'>£0</h3>
+                    </div>
+                </div>
+                <div class='col'>
+                    <h2>Property Status</h2>
+                    <select id='searchbar-status'>
+                        <option selected value=''>Select a property status...</option>
+                        <option value='For sale'>For sale</option>
+                        <option value='To let'>To let</option>
+                        <option value='Let agreed'>Let agreed</option>
+                        <option value='Sold'>Sold</option>
+                    </select>
+                </div>
+                <button id='searchbar-search'>Search</button>
             </div>
-            <div class='page row'></div>
+        </div>
+        <div class='page row'></div>
        
-
         <div class='modal modal__hidden col w-full h-full'>
-            <div class='col' id='modal-cont'>
-
-            </div>
+            <div class='col' id='modal-cont'></div>
             <button id='modal-exit'>Exit</button>
         </div>
 
